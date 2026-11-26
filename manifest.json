@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "spo-yt-heure-fin",
+  "version": "1.0.0",
+  "description": "Affiche l'heure de fin estimée d'une vidéo YouTube, en tenant compte de la vitesse de lecture.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
